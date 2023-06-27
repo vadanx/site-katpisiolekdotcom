@@ -1,0 +1,64 @@
+baseURL: http://katpisiolek-gallery-demo.s3-website.eu-west-2.amazonaws.com # https://katpisiolek.com
+title: '' # Kat Pisiolek Photography
+defaultContentLanguage: 'en'
+theme: eternity
+googleAnalytics: ''
+
+params:
+  image: /images/banner.png
+  logo: logo.png
+  subtitle: Kat Pisiolek is an established still life photographer based in London. She specialises in product, cosmetics and jewellery photography.
+  copyright: All rights reserved.
+  author: Kat Pisiolek
+  dontShowSource: true
+  socials:
+    - icon: far fa-envelope fa-xl
+      url: mailto:kat@katpisiolek.com
+      landing: true
+    - icon: fab fa-instagram fa-xl
+      url: https://www.instagram.com/kat_pisiolek/
+      landing: true
+    - icon: fab fa-linkedin-in fa-xl
+      url: https://www.linkedin.com/in/kat-pisiolek-66961743
+      landing: true
+  homepage: "/all"
+  specialPages:
+    - all
+  bypassWelcomePage: true
+  disableWelcomePageBackground: true
+  plausible: ''
+  disableRadius: true
+  moveIt: false
+  disableAlwaysResize: false
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  tag: tags
+
+timeout: 60s
+
+permalinks:
+  all: ":filename/"
+
+menu:
+  main:
+    - name: all
+      url: /all/
+      weight: 10
+    - name: beauty
+      url: /tags/beauty/
+      weight: 20
+    # - name: jewellery
+    #   url: /tags/jewellery/
+    #   weight: 30
+    # - name: still
+    #   url: /tags/still/
+    #   weight: 40
+    - name: about
+      url: /about/
+      weight: 50
