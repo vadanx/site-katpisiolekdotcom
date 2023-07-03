@@ -1,6 +1,6 @@
 ---
 images:
-- '/images/about.png'
+- '/images/about.jpg'
 title: about
 url: about
 hideTitle: true

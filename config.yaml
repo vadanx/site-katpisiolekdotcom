@@ -40,7 +40,7 @@ markup:
 taxonomies:
   tag: tags
 
-timeout: 60s
+timeout: 120s
 
 permalinks:
   all: ":filename/"
@@ -53,12 +53,12 @@ menu:
     - name: beauty
       url: /tags/beauty/
       weight: 20
-    # - name: jewellery
-    #   url: /tags/jewellery/
-    #   weight: 30
-    # - name: still
-    #   url: /tags/still/
-    #   weight: 40
+    - name: still-life
+      url: /tags/still-life/
+      weight: 30
+    - name: texture
+      url: /tags/texture/
+      weight: 40
     - name: about
       url: /about/
       weight: 50
