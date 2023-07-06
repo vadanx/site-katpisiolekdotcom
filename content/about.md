@@ -10,15 +10,15 @@ hideDate: true
 
 <div align="center">
 	<p>
-        Kat Pisiolek is an established still life photographer based in London.
+        Photographer in London: Kat Pisiolek
 	</p>
 	<p>
-	    She specialises in product, cosmetics and jewellery photography.
+	    <a href="https://katpisiolek.com">katpisiolek.com</a>
 	</p>
 	<p>
-		Some of her clients include:
+		<a href="tel:+447930260366">+44 (0)7930 260366</a>
 	</p>
 	<p>
-    	Blink Brow Bar, Boots, Ciate London, City Cruises, Crea, Hearst Magazines, Hearst Promotions, Hunny Cosmetics, KAO, Liberty, Lottie London, Maesa, Rake Magazine, Revolution Beauty, Sam Labs, Stylist Magazine, Superdrug, Taylor & Hart, Trouva, & more.
+    	Hi, I am Kat and I am based in London where I create photographs for advertising and editorial clients. If you are interested in working together just get in touch with me.
 	</p>
 </div>

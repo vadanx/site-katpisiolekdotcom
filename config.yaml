@@ -1,4 +1,4 @@
-baseURL: http://katpisiolek-gallery-demo.s3-website.eu-west-2.amazonaws.com # https://katpisiolek.com
+baseURL: https://www.katpisiolek.com
 title: '' # Kat Pisiolek Photography
 defaultContentLanguage: 'en'
 theme: eternity
