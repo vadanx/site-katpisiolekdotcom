@@ -1,13 +1,12 @@
 baseURL: https://www.katpisiolek.com
-title: '' # Kat Pisiolek Photography
+title: 'katpisiolek.com'
 defaultContentLanguage: 'en'
 theme: eternity
 googleAnalytics: ''
 
 params:
-  image: /images/banner.png
-  logo: logo.png
-  subtitle: Kat Pisiolek is an established still life photographer based in London. She specialises in product, cosmetics and jewellery photography.
+  logo: /logo.jpg
+  subtitle: London-based photography studio specialising in advertising and editorial.
   copyright: All rights reserved.
   author: Kat Pisiolek
   dontShowSource: true
@@ -49,16 +48,16 @@ menu:
   main:
     - name: all
       url: /all/
-      weight: 10
+      weight: 100
     - name: beauty
       url: /tags/beauty/
-      weight: 20
+      weight: 200
     - name: still-life
       url: /tags/still-life/
-      weight: 30
+      weight: 300
     - name: texture
       url: /tags/texture/
-      weight: 40
+      weight: 400
     - name: about
       url: /about/
-      weight: 50
+      weight: 500
