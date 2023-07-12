@@ -30,7 +30,9 @@ scripts/site-test.sh
 ### Deploy
 Add, commit and push your changes:
 ```console
-git add -A \
-&& git commit -m "Updating the website" \
-&& git push
+git add --all
+
+git commit --message "Updating the website"
+
+git push
 ```
