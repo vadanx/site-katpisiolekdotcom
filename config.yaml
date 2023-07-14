@@ -58,6 +58,6 @@ menu:
     - name: texture
       url: /tags/texture/
       weight: 400
-    - name: about
-      url: /about/
+    - name: contact
+      url: /contact/
       weight: 500

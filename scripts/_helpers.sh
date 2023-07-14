@@ -7,17 +7,24 @@ contentBuild () {
     TARGET_DIR="content/all"
     SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
     TARGET_RELATIVE_DIR="${SCRIPT_DIR}/../${TARGET_DIR}"
-    IMAGE_REGEX="^([0-9]+)-([a-z-]+)\.jpg$"
+    IMAGE_REGEX="([0-9]+)-([a-z-]+)\.jpg$"
 
-    rm -rf "${TARGET_RELATIVE_DIR}/*"
+    SOURCE_TAGS=$(find "${SCRIPT_DIR}/../${SOURCE_DIR}" -name "*.jpg" ! -name "contact.jpg" | xargs -I {} basename {} | sed -r "s/${IMAGE_REGEX}/\2/g" | sort | uniq)
 
-    for source_file in $(find "${SCRIPT_DIR}/../${SOURCE_DIR}" -name "*.jpg" ! -name "about.jpg")
+    for tag in ${SOURCE_TAGS}
     do
-        image_type=$(basename ${source_file} | sed -r "s/${IMAGE_REGEX}/\2/g")
-        image_weight=$(basename ${source_file} | sed -r "s/${IMAGE_REGEX}/\1/g")
+        rm -rf "${TARGET_RELATIVE_DIR}/${tag}"
+    done
+
+    SOURCE_FILES=$(find "${SCRIPT_DIR}/../${SOURCE_DIR}" -name "*.jpg" ! -name "contact.jpg")
+
+    for file in ${SOURCE_FILES}
+    do
+        image_type=$(basename ${file} | sed -r "s/${IMAGE_REGEX}/\2/g")
+        image_weight=$(basename ${file} | sed -r "s/${IMAGE_REGEX}/\1/g")
         target_tag_dir="${TARGET_RELATIVE_DIR}/${image_type}"
         target_file="${target_tag_dir}/${image_weight}-${image_type}.md"
-        image_path="${source_file#"${SCRIPT_DIR}/../assets"}"
+        image_path="${file#"${SCRIPT_DIR}/../assets"}"
         printf "Building %s\n" "${image_path}"
         mkdir -p "${target_tag_dir}"
         cat >"${target_file}" <<EOT

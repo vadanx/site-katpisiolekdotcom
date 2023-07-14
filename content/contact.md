@@ -1,8 +1,8 @@
 ---
 images:
-- '/images/about.jpg'
-title: about
-url: about
+- '/images/contact.jpg'
+title: contact
+url: contact
 hideTitle: true
 hideExif: true
 hideDate: true
