@@ -4,5 +4,5 @@
 
 html {
     -ms-overflow-style: none;
-    scrollbar-width: auto;
+    scrollbar-width: thin;
 }
